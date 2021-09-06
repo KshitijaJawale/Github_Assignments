@@ -1,0 +1,126 @@
+GIT AND GITHUB
+
+BASIC COMMANDS 
+
+git init.
+git add.
+git commit.
+git status.
+git config.
+git branch.
+git checkout.
+git merge.
+
+
+
+Tell Git who you are
+
+git config --global user.name "Sam Smith"
+git config --global user.email sam@example.com
+
+
+Create a new local repository	 	
+git init
+
+
+
+Add files	
+git add <filename>
+
+
+
+Commit	Commit changes to head 	
+git commit -m "Commit message"
+
+
+
+Commit any files you've added with git add, and also commit any files you've changed since then:	
+git commit -a
+
+
+
+Push	
+Send changes to the master branch of your remote repository:	
+git push origin master
+
+
+
+Status	
+List the files you've changed and those you still need to add or commit:	
+git status
+
+
+
+
+Branches	
+Create a new branch and switch to it:	
+git checkout -b <branchname>
+
+
+
+Switch from one branch to another:	
+git checkout <branchname>
+List all the branches in your repo, and also tell you what branch you're currently in:	
+git branch
+
+
+
+
+Delete the feature branch:	
+git branch -d <branchname>
+
+
+
+
+Push the branch to your remote repository, so others can use it:	
+git push origin <branchname>
+
+
+
+
+Push all branches to your remote repository:	
+git push --all origin
+
+
+
+
+Delete a branch on your remote repository:	
+git push origin :<branchname>
+
+
+
+Fetch and merge changes on the remote server to your working directory:	
+git pull
+
+
+
+To merge a different branch into your active branch:	
+git merge <branchname>
+
+
+
+View all the merge conflicts:
+View the conflicts against the base file:
+Preview changes, before merging:
+
+
+
+
+git diff
+git diff --base <filename>
+
+
+
+
+git diff <sourcebranch> <targetbranch>
+After you have manually resolved any conflicts, you mark the changed file:
+git add <filename>
+
+
+
+
+
+BRANCH 
+A branch in Git is simply a lightweight movable pointer to one of these commits.
+As you start making commits, you're given a master branch that points to the last commit you made. 
+Every time you commit, the master branch pointer moves forward automatically. Note. The “master” branch in Git is not a special branch.
